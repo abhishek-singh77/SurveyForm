@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>SurveyForm</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/css?family=Dosis:400,700" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    </head>
+    <body>
+       <div id="heading">
+       <h1 id= "title">Select Website</h1>
+       <p id="description">Fill the form as per the website you want. </p>
+       </div>
+       <div id="main">
+        <form id="survey-form">
+        <div id="input-fields">
+            <label id="label"><b>Name:</b></label>
+            <input id="name" type="name" name="name" class="form" required placeholder="Full Name"><br>
+            <br>
+            <label id="label"><b>Email:</b></label>
+            <input id="email" type="email" name="email" class="form" required placeholder="example@mail.com"><br>
+            <br>
+            <label id="label"><b>Age:</b></label>
+            <input id="number" type="number" name="number" class="form" min="5" max="99" placeholder="12+">
+         </div>
+         <div id="dropdown-div"><br>
+            <label id="label"><strong>Genre Of Website</strong></label><br>
+            <select id="dropdown" name="code-lang" class="form">
+                <option value="C">Blogging Website</option>
+                <option value="Python">E-commerce Website (e.g, Shopify)</option>
+                <option value="C#">Personal Website</option>
+                <option value="php">Product Website</option>
+                <option value="Js">Organization Website</option>
+                <option value="Go">Other</option>
+            </select>
+            <label id="number-label"><b>Other</b></label>
+            <input id="name" type="name" name="others" class="form" placeholder="Other (Optional)">
+         </div>
+         <div id="button-area">
+             <br>
+            <label id="job-label"><b>Do you want any custom design for website.</b></label><br>
+            <input type="radio" class="radio-inline" name="gender" value="employed" checked> Yes<br>
+            <input type="radio" class="radio-inline" name="gender" value="freelancer"> No<br>
+          </div>
+          <div id="button-area"><br>
+            <label id="os-label"><b>Do you also want SEO service? </b></label><br>
+            <input type="radio" class="radio-inline" name="yes" value="employed" checked> Yes<br>
+            <input type="radio" class="radio-inline" name="yes" value="freelancer"> No<br>
+          </div>
+
+          
+          <div id="button-area"><br><br>
+            <label id="os-label"><b>Do you have Domain and hosting?</b></label><br>
+            <input type="radio" class="radio-inline" name="yes" value="employed" checked> Yes<br>
+            <input type="radio" class="radio-inline" name="yes" value="freelancer"> No<br>
+          </div>
+          <div id="button-area"><br><br>
+            <label id="os-label"><b>Is there any template in your mind for the website?</b></label><br>
+            <input type="radio" class="radio-inline" name="yes" value="employed" > Yes<br>
+            <input type="radio" class="radio-inline" name="yes" value="freelancer"> No<br>
+            <textarea style= height:"120px;" class="form" placeholder= "Share the link to your template here." ></textarea><br><br>
+            <input id="submit" type="submit" value="Submit link" name="submit link"  class="form"><br>
+          </div>
+
+
+          <div id="heading"><br><br>
+            <label id="comments-label">Tell us more about your website here for best results?</label><br>
+            <textarea style= height:"120px;" class="form" placeholder="Please feel free to write a review..."></textarea><br><br>
+            <input id="submit" type="submit"  class="form">
+          </div>
+        </form>
+    </div> 
+    </body>
+</html>
